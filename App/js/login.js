@@ -68,4 +68,12 @@ if (urlError == "user_not_found") {
     errorModal.style.display = "none";
     window.location.href = "/App";
   }, 2500);
+} else if (urlError == "username_taken") {
+  errorModal.style.display = "block";
+  errorMessage.innerHTML = "Username already taken";
+  setTimeout(function () {
+    errorModal.style.display = "none";
+    window.location.href = "/App";
+  }, 2500);
+
 }

@@ -30,6 +30,6 @@ if($_POST) {
 function loginUser($user)
 {
     $_SESSION['user'] = $user;
-    header("Location: App/dashboard.php");
+    header("Location: Views/dashboard.php");
 }
 

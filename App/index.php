@@ -23,7 +23,7 @@ header("Pragma: no-cache");
             <input type="password" placeholder="Password" name="password"/>
             <input type="submit" id="login_button" value="Login" />
         </form>
-        <button id="register">Signup</button>
+        <button id="register">Sign Up</button>
     </div>
 
     <div id="registerModal" class="modal">
@@ -31,8 +31,11 @@ header("Pragma: no-cache");
             <span class="close">&times;</span>
             <h2>Registration Form</h2>
             <form id="registrationForm" method="post" action="App/register.php">
-                <label for="name">Name:</label>
-                <input name="name" type="text" id="name" required>
+                <label for="fname">First Name:</label>
+                <input name="fname" type="text" id="fname" required>
+                <br>
+                <label for="lname">Last Name:</label>
+                <input name="lname" type="text" id="lname" required>
                 <br>
                 <label for="username">Username:</label>
                 <input name="username" type="text" id="username" required>
