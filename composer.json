@@ -1,0 +1,17 @@
+{
+    "name": "austi/austs-wrld",
+    "require": {
+        "symfony/var-dumper": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Austi\\AustsWrld\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "aust",
+            "email": "aeb157@yahoo.com"
+        }
+    ]
+}
