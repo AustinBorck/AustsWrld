@@ -1,11 +1,12 @@
 {
     "name": "austi/austs-wrld",
     "require": {
-        "symfony/var-dumper": "^6.3"
+        "symfony/var-dumper": "^6.3",
+        "ffi/var-dumper": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "Austi\\AustsWrld\\": "src/"
+            "Austi\\AustsWrld\\": "App/"
         }
     },
     "authors": [

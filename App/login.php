@@ -1,2 +1,2 @@
 <?php
-require_once 'debug.php';
+dd($_POST);
