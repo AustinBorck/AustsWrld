@@ -1,5 +1,6 @@
 <?php
 
+namespace App\Models;
 class User {
     public static $table = 'users';
 
@@ -34,8 +35,6 @@ class User {
         $stmt = $conn->prepare("SELECT * FROM users WHERE username = :username");
         $stmt->bindParam(':username', $this->username);
         $stmt->execute();
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
-        $this->mapData($result);
     }
 
 }
