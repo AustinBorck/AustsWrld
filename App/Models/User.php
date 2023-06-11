@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Models;
+
 class User {
     public static $table = 'users';
 
@@ -31,8 +32,8 @@ class User {
 
     public function loadFromDB()
     {
-        global $conn;
-        $stmt = $conn->prepare("SELECT * FROM users WHERE username = :username");
+        require('../db.php');
+        $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
         $stmt->bindParam(':username', $this->username);
         $stmt->execute();
     }

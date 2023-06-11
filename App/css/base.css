@@ -33,6 +33,18 @@ button {
   font-family: "Courier New", Courier, monospace;
 }
 
+textarea {
+  background-color: #666;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+  height: 100px;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="submit"],
@@ -93,4 +105,18 @@ button {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+}
+
+.post-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #666;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+  margin-right: 20px;
 }
