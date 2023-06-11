@@ -1,38 +1,44 @@
-.navbar > div.icon > a > img {
-    height: 50px;
-    width: 50px;
-}
-
 .navbar {
     display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: space-between;
+    width: 99%;
     overflow-x: hidden;
     background-color: #f0f0f0;
     padding: 10px;
 }
 
-header {
-    width: 100%;
-    overflow-x: hidden;
-    background-color: beige;
+.left-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar > div.left-links > div.icon > a > img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
 }
 .navbar > div.icon {
     margin-right: 10px;
 }
 
-.navbar > a {
-    margin-right: 10px;
+.navbar .logout-button {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.navbar > .left-links > a {
     background-color: #666;
     color: #fff;
     border: none;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
     font-size: 14px;
     font-family: "Courier New", Courier, monospace;
     text-decoration: none;
 }
 
-.navbar > a:last-child {
-    margin-right: 0;
+.navbar > a:not(:last-child) {
+    margin-right: 10px;
 }
