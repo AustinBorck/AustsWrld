@@ -54,4 +54,14 @@ class Post {
         return $posts;
     }
 
+    public function getUserPosts($user_id)
+    {
+        require('../db.php');
+        $stmt = $pdo->prepare("SELECT * FROM posts WHERE user_id = :user_id AND active = 1 ORDER BY date_created DESC");
+        $stmt->bindParam(':user_id', $user_id);
+        $stmt->execute();
+        $posts = $stmt->fetchAll();
+        return $posts;
+    }
+
 }
