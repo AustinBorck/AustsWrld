@@ -23,7 +23,7 @@ if ($_POST) {
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($user) {
-        header("Location: index.php?error=username_taken");
+        header("Location: ../index.php?error=username_taken");
         exit;
     }
 
@@ -45,7 +45,7 @@ if ($_POST) {
         ];
         loginUser($user);
     } else {
-        header("Location: index.php?error=unknown_error");
+        header("Location: ../index.php?error=unknown_error");
         exit;
     }
 }
@@ -53,5 +53,5 @@ if ($_POST) {
 function loginUser($user)
 {
     $_SESSION['user'] = $user;
-    header("Location: Views/dashboard.php");
+    header("Location: ../Views/dashboard.php");
 }

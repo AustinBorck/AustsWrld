@@ -1,0 +1,38 @@
+.navbar > div.icon > a > img {
+    height: 50px;
+    width: 50px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+header {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: beige;
+}
+.navbar > div.icon {
+    margin-right: 10px;
+}
+
+.navbar > a {
+    margin-right: 10px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: "Courier New", Courier, monospace;
+    text-decoration: none;
+}
+
+.navbar > a:last-child {
+    margin-right: 0;
+}

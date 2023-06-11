@@ -18,7 +18,7 @@ header("Pragma: no-cache");
     <div class="container">
         <h2>WELCOME TO AUSTS_WRLD</h2>
 
-        <form name="login" action="App/login.php" method="post">
+        <form name="login" action="App/Controllers/login.php" method="post">
             <input type="text" placeholder="Username" name="username"/>
             <input type="password" placeholder="Password" name="password"/>
             <input type="submit" id="login_button" value="Login" />
@@ -30,7 +30,7 @@ header("Pragma: no-cache");
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Registration Form</h2>
-            <form id="registrationForm" method="post" action="App/register.php">
+            <form id="registrationForm" method="post" action="App/Controllers/register.php">
                 <label for="fname">First Name:</label>
                 <input name="fname" type="text" id="fname" required>
                 <br>

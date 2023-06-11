@@ -1,7 +1,7 @@
 <?php
 
 use App\Models\User;
-require 'db.php';
+require '../db.php';
 
 if($_POST) {
     $username = $_POST['username'];
@@ -18,11 +18,11 @@ if($_POST) {
             loginUser($user);
             exit;
         } else {
-            header("Location: index.php?error=incorrect_password");
+            header("Location: ../index.php?error=incorrect_password");
             exit;
         }
     } else {
-        header("Location: index.php?error=user_not_found");
+        header("Location: ../index.php?error=user_not_found");
         exit;
     }
 }
@@ -30,6 +30,6 @@ if($_POST) {
 function loginUser($user)
 {
     $_SESSION['user'] = $user;
-    header("Location: Views/dashboard.php");
+    header("Location: ../Views/dashboard.php");
 }
 

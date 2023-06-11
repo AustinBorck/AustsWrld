@@ -1,17 +1,12 @@
-<?php ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>AUSTS_WRLD</title>
-    <link rel="stylesheet" href="../css/header.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <!-- Navigation menu -->
-        </nav>
-        <div class="logo">
-            <!-- Logo image or text -->
+<header>
+    <div class="navbar">
+        <div class="icon">
+            <a href="dashboard.php"><img src="../../App/svgs/logo.svg" alt="SVG Image"></a>
         </div>
-    </header>
+        <a href="profile.php">Profile</a>
+        <form action="/../App/Controllers/logout.php" method="post">
+            <button type="submit" name="logout" value="1">Logout</button>
+        </form>
+    </div>
+</header>
+<!-- App\Controllers -->
