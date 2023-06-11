@@ -1,6 +1,7 @@
 <?php
 use App\Models\User;
 require '../db.php';
+require_once('../session.php');
 
 if ($_POST) {
     $fname = $_POST['fname'];

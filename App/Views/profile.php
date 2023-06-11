@@ -1,3 +1,8 @@
+<?php
+session_start();
+$user = $_SESSION['user'];
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +13,7 @@
 </head>
 <body>
     <?php include '../Views/header.php'; ?>
-    <div class="container">
-        <h2>test profile</h2>
+        <h2><?php echo($user['fname'] . ' ' . $user['lname'])?></h2>
     </div>
 </body>
 </html>

@@ -2,6 +2,7 @@
 
 use App\Models\User;
 require '../db.php';
+require_once('../session.php');
 
 if($_POST) {
     $username = $_POST['username'];
@@ -29,7 +30,9 @@ if($_POST) {
 
 function loginUser($user)
 {
+    $_SESSION['authenticated'] = true;
     $_SESSION['user'] = $user;
     header("Location: ../Views/dashboard.php");
+    exit;
 }
 
