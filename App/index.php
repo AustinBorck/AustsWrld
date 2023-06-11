@@ -18,7 +18,7 @@ header("Pragma: no-cache");
     <div class="container">
         <h2>WELCOME TO AUSTS_WRLD</h2>
 
-        <form name="login" action="App/Controllers/login.php" method="post">
+        <form name="login" action="../App/Controllers/login.php" method="post">
             <input type="text" placeholder="Username" name="username"/>
             <input type="password" placeholder="Password" name="password"/>
             <input type="submit" id="login_button" value="Login" />
