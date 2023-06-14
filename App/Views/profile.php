@@ -1,5 +1,5 @@
 <?php
-session_start();
+require_once('../session.php');
 $user = $_SESSION['user'];
 ?>
 
