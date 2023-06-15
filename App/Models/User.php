@@ -12,6 +12,8 @@ class User {
     public $lname;
     public $active;
 
+    public $profile_picture;
+
     public function __construct($username, $password, $email, $fname, $lname, $active) {
         $this->username = $username;
         $this->password = $password;
@@ -28,6 +30,7 @@ class User {
         $this->fname = $data['fname'];
         $this->lname = $data['lname'];
         $this->active = $data['active'];
+        $this->profile_picture = $data['profile_picture'];
     }
 
     public function loadFromDB()
