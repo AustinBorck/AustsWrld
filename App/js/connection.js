@@ -15,3 +15,4 @@
 $(document).ready(function() {
     sendRequest({ 'a': 'ping' });
 });
+//test
